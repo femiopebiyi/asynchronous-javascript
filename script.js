@@ -89,8 +89,13 @@ order (2000, () => console.log(`${stocks.fruits[1]} was selected`))
     return order (2000, ()=>console.log('ice cream has been served'))
 })
 
+.catch (()=>{
+    console.log('customer left')
+})
 
-
+.finally(()=> {
+    console.log('our shop is closed, day ended')
+})
 
 
 
